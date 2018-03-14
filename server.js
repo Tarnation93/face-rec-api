@@ -46,7 +46,7 @@ app.put('/image', (req,res) => {
  })
 
 app.get('/', (req,res)=>
-	res.send(db.users))
+	res.send("it is working"))
 
 app.post('/signIn', (req,res)=>
 {
