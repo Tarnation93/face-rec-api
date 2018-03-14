@@ -74,7 +74,7 @@ app.post('/signIn', (req,res)=>
 
 app.post('/register', (req,res)=> {
         const {email, password, name} = req.body;
-        if(!email || !password || name)
+        if(!email || !password || !name)
             return res.status(400).json("incorrect form submision")
     
     const hash = bcrypt.hashSync(password);
